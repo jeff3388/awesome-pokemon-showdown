@@ -4,7 +4,7 @@
 
 Maintained by the community. Pull requests welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-**Last updated:** 2026-04-08
+**Last updated:** 2026-04-23
 
 ---
 
@@ -34,7 +34,7 @@ Maintained by the community. Pull requests welcome — see [CONTRIBUTING.md](CON
 ### Playing VGC on Showdown
 
 1. Go to [pokemonshowdown.com](https://pokemonshowdown.com)
-2. Click **Play** → **Find a Battle** → Select **[Gen 9] VGC 2025 Reg G**
+2. Click **Play** → **Find a Battle** → Select **[Gen 9] VGC 2026 Reg I**
 3. Or use **Teambuilder** to build and test before ladder play
 
 ---
@@ -130,8 +130,8 @@ import asyncio
 from poke_env.player import RandomPlayer, SimpleHeuristicsPlayer
 
 async def main():
-    player1 = RandomPlayer(battle_format="gen9vgc2025regg")
-    player2 = SimpleHeuristicsPlayer(battle_format="gen9vgc2025regg")
+    player1 = RandomPlayer(battle_format="gen9vgc2026regi")
+    player2 = SimpleHeuristicsPlayer(battle_format="gen9vgc2026regi")
     await player1.battle_against(player2, n_battles=10)
     print(f"Player 1 win rate: {player1.win_rate:.2%}")
 
@@ -144,20 +144,20 @@ asyncio.run(main())
 
 | Resource | Description |
 |----------|-------------|
-| [Gen 9 VGC 2025 Reg G Format](https://dex.pokemonshowdown.com/formats/gen9vgc2025regg) | PS format page for current Regulation G — shows legal Pokémon and rules |
-| [VGC Usage Stats (Smogon)](https://www.smogon.com/stats/2025-03/gen9vgc2025regg-1760.txt) | High-ladder VGC usage data (replace date for latest month) |
-| [Pikalytics VGC](https://pikalytics.com/pokedex/gen9vgc2025regg) | Ranked VGC-specific usage with teammate and spread data |
-| [pokestats.cc VGC Guides](https://pokestats.cc/guides) | Strategy guides for top Regulation G Pokémon — Incineroar, Koraidon, Flutter Mane, and more |
+| [Gen 9 VGC 2026 Reg I Format](https://dex.pokemonshowdown.com/formats/gen9vgc2026regi) | PS format page for current Regulation I — shows legal Pokémon, 2 restricted rule, and format rules |
+| [VGC Usage Stats (Smogon)](https://www.smogon.com/stats/2026-03/gen9vgc2026regi-1760.txt) | High-ladder VGC usage data (replace date for latest month) |
+| [Pikalytics VGC](https://pikalytics.com/pokedex/gen9vgc2026regi) | Ranked VGC-specific usage with restricted pair frequencies, teammate and spread data |
+| [pokestats.cc VGC Guides](https://pokestats.cc/guides) | Strategy guides for top Regulation I Pokémon — Incineroar, Koraidon, Flutter Mane, and more |
 
 ### Useful PS Slash Commands for VGC
 
 ```
-/tier gen9vgc2025regg        Check if a Pokémon is legal in current VGC
+/tier gen9vgc2026regi        Check if a Pokémon is legal in current VGC
 /data [move name]            Look up move BP, type, and effects
 /calc                        Open damage calculator
 /roomintro vgc               View the VGC room introduction and rules
 /rank                        Check your current ladder ranking
-/challenge [username], gen9vgc2025regg   Challenge a specific user to VGC
+/challenge [username], gen9vgc2026regi   Challenge a specific user to VGC
 ```
 
 ---
