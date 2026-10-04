@@ -84,6 +84,7 @@ console.log(result.kochance());   // OHKO probability
 | Tool | Description |
 |------|-------------|
 | [PS! Teambuilder](https://pokemonshowdown.com/teambuilder) | Official browser teambuilder with format legality checking and Showdown paste import/export |
+| [ChampiDex](https://champidex.com/builder) | Competitive Pokémon team builder with Showdown import/export, legality checking, team analysis, stress testing, and minimal-change repair previews |
 | [Pikalytics Team Builder](https://pikalytics.com) | Usage-data-informed teambuilder — shows how common each move/item/spread is at high ladder |
 | [Pokemon Showdown Import Format](https://smogon.com/forums/threads/how-to-import-a-team.3655274/) | Guide to importing team pastes from team reports into PS |
 
